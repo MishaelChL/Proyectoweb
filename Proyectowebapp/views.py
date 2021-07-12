@@ -3,16 +3,16 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Home")
+    return render(request, "Proyectowebapp/home.html")
 
 def servicios(request):
-    return HttpResponse("Servicios")
+    return render(request, "Proyectowebapp/servicios.html")
 
 def tienda(request):
-    return HttpResponse("Tiendas")
+    return render(request, "Proyectowebapp/tienda.html")
 
 def blog(request):
-    return HttpResponse("Blog")
+    return render(request, "Proyectowebapp/blog.html")
 
 def contacto(request):
-    return HttpResponse("Contacto")
+    return render(request, "Proyectowebapp/contacto.html")
