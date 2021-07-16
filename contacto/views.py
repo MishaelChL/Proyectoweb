@@ -3,6 +3,9 @@ from .forms import FormularioContacto
 from django.core.mail import EmailMessage
 # Create your views here.
 def contacto(request):
+    return render(request, "contacto/contacto.html")
+
+def contacto(request):
     formulario_contacto = FormularioContacto()
     if request.method == 'POST':
         formulario_contacto = FormularioContacto(data = request.POST)
