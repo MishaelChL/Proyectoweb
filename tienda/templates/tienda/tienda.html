@@ -3,7 +3,13 @@
   {% load static %}
 
   {% block content %}
-
-    <div><p></p></div>
-
+    <div class="row">
+      {% for producto in productos %}
+        
+        <div class="card" style="width: 10%;">
+          <img src="{{producto.imagen.url}}" alt="">
+        </div>
+        
+      {% endfor %}
+    </div>
   {% endblock %}
